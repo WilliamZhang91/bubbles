@@ -1,23 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="home">
+      <div className="navbar">
+        <img src={require("./images/logo.png")} alt="logo" />
+        <button className="btn">Register</button>
+      </div>
+      <div className="title">
+        <div style={{ fontSize: "30px", margin: "20px 0" }}>Welcome To Our</div>
+        <h1 style={{ fontSize: "60px", margin: "20px 0" }}>Creative Studio</h1>
+        <button className="btn">Take a Tour</button>
+      </div>
+      <div className="side-bar">
+        <div className="menu">
+          <img src={require("./images/menu.png")} alt="bars" />
+        </div>
+      </div>
+      <div class="bubbles">
+        <img src={require("./images/bubble.png")} />
+        <img src={require("./images/bubble.png")} />
+        <img src={require("./images/bubble.png")} />
+        <img src={require("./images/bubble.png")} />
+        <img src={require("./images/bubble.png")} />
+        <img src={require("./images/bubble.png")} />
+        <img src={require("./images/bubble.png")} />
+        <img src={require("./images/bubble.png")} />
+      </div>
     </div>
   );
 }
